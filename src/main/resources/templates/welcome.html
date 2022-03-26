@@ -1,19 +1,35 @@
-<html lang="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="">
+
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body style="background-color: palevioletred">
-<h2 align="center">Welcome To Mum's Cafe</h2>
+<body>
+<h2 style="text-align: center">LOVE CALCULATOR</h2>
 <hr>
 
-<form action="process">
-    <label>Food
-        <input type="text" name="FoodType" placeholder="food">
-    </label>
-    <input type="submit" value="order">
+
+<div style="text-align: center">
+    <form action="calculate" method="get" modelattribute="userInfo">
+        <p>
+            <label>User Name:
+                <input type="text" name="userName">
+
+            </label>
+        </p>
+
+        <p>
+            <label>Crush Name:
+                <input type="text" name="crushName">
+            </label>
+
+        </p>
+
+        <input type="submit" value="calculate">
 
 
-</form>
+    </form>
+</div>
 </body>
 </html>

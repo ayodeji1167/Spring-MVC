@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>LOVE CALCULATOR</h1>
+
+
+
+<p>
+    The session is
+
+    <h1> This is the username</h1>
+    <h1 th:text="${userInfo.getUserName()}"></h1>
+
+</p>
+
+    <b th:text="${userInfo.getCrushName()}"></b>
+
+<h3>are FRIENDS</h3>
+
+<a href="send-email"  >Send result to your email</a>
+</body>
+</html>

@@ -1,15 +1,24 @@
 package com.example.springmvc;
 
-import org.springframework.web.WebApplicationInitializer;
 
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
+import com.example.springmvc.config.ProjectConfig;
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class MyXml implements WebApplicationInitializer {
+
+public class MyXml extends AbstractAnnotationConfigDispatcherServletInitializer {
+
     @Override
-    public void onStartup(ServletContext servletContext) throws ServletException {
-        //Crete Dispatcher Servlet here
-        //Register Dispatcher Servlet with servlet context
+    protected Class<?>[] getRootConfigClasses() {
+        return new Class[0];
+    }
 
+    @Override
+    protected Class<?>[] getServletConfigClasses() {
+        return new Class[]{ProjectConfig.class};
+    }
+
+    @Override
+    protected String[] getServletMappings() {
+        return new String[]{"/home/*"};
     }
 }
