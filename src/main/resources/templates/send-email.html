@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 
-<h1><b>HI</b></h1>
-<b th:text="${session.username1}"> </b>
+<h1>HI <span th:text="${session.userInfo.userName}"></span></h1>
 <h2>SEND RESULT TO YOUR EMAIL</h2>
 <form action="process-email">
 
     <label for="em"> Enter Your Email:</label>
-    <input type="text" name="userEmail" id="em">
+    <input type="email" name="userEmail" id="em" required>
     <input type="submit" value="send">
 </form>
 </body>

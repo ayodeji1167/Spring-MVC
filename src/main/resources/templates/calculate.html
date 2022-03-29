@@ -1,25 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-<h1>LOVE CALCULATOR</h1>
+<h1>THE LOVE CALCULATOR PREDICTS:</h1>
 
-
-
-<p>
-    The session is
-
-    <h1> This is the username</h1>
-    <h1 th:text="${userInfo.getUserName()}"></h1>
-
-</p>
-
-    <b th:text="${userInfo.getCrushName()}"></b>
-
-<h3>are FRIENDS</h3>
+<h3><span th:text="${userInfo.getUserName()}"></span>
+    and <span th:text="${userInfo.getCrushName()}"></span> are <span
+            th:text="${userInfo.getResult()}"></span> </h3>
 
 <a href="send-email"  >Send result to your email</a>
 </body>

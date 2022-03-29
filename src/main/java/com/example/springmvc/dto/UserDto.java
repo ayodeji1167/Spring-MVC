@@ -10,6 +10,16 @@ public class UserDto {
 
     private String crushName;
 
+    public String getResult() {
+        return result;
+    }
+
+    public void setResult(String result) {
+        this.result = result;
+    }
+
+    private String result;
+
     public UserDto() {
     }
 

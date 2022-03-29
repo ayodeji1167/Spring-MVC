@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-
-<b>Email has been successfully sent to </b>
-<b th:text="${emailInfo.getUserEmail()}"></b>
-
+<h2>HI <span th:text="${session.userInfo.userName}"> </span></h2>
+<div>
+    <h3>Email Successfully sent to
+        <span th:text="${emailInfo.getUserEmail()}"></span></h3>
+</div>
+<br>
+<a href="feedback">Send Feedback</a>
 
 </body>
 </html>

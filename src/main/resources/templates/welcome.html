@@ -1,4 +1,4 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="">
+<html lang="en">
 
 
 <head>
@@ -9,23 +9,16 @@
 <h2 style="text-align: center">LOVE CALCULATOR</h2>
 <hr>
 
-
 <div style="text-align: center">
-    <form action="calculate" method="get" modelattribute="userInfo">
+    <form action="calculate" method="get">
         <p>
-            <label>User Name:
-                <input type="text" name="userName">
-
-            </label>
+            <label for="name">User Name:</label>
+            <input type="text" name="userName" id="name">
         </p>
-
         <p>
-            <label>Crush Name:
-                <input type="text" name="crushName">
-            </label>
-
+            <label for="crush">Crush Name:</label>
+            <input type="text" name="crushName" id="crush">
         </p>
-
         <input type="submit" value="calculate">
 
 

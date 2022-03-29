@@ -1,5 +1,7 @@
 package com.example.springmvc.dto;
 
+import org.springframework.ui.Model;
+
 public class EmailDto {
     private String userEmail;
 
